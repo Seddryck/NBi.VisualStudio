@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<testSuite name="MyTestSuite" xmlns="http://NBi/TestSuite">
+  <settings>
+    <!--change settings according to your need-->
+    <default apply-to="system-under-test">
+      <connectionString>Data Source=mhknbn2kdz.database.windows.net;Initial Catalog=AdventureWorks2012;User Id=sqlfamily;password=sqlf@m1ly</connectionString>
+    </default>
+    <default apply-to="assert">
+      <connectionString>Data Source=mhknbn2kdz.database.windows.net;Initial Catalog=AdventureWorks2012;User Id=sqlfamily;password=sqlf@m1ly</connectionString>
+    </default>
+  </settings>
+  <!--define your tests here under-->
+  <test name="My first test">
+    <system-under-test>
+      <execution>
+        <query>select 'ok'</query>
+      </execution>
+    </system-under-test>
+    <assert>
+      <equalTo>
+        <column index="0" role="key" type="text"/>
+        <query>
+          SELECT 'ok'
+        </query>
+      </equalTo>
+    </assert>
+  </test>
+</testSuite>

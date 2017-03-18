@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NBi.VisualStudio</id>
+    <version>0.1.0</version>
+    <authors>Cédric L. Charlier</authors>
+    <owners>Cédric L. Charlier</owners>
+    <licenseUrl>https://github.com/Seddryck/NBi/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://www.nbi.io</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Seddryck/nbi/gh-pages/img/logo-2x.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package retrieves NUnit runners and NBi framework from Nuget before creating an empty test-suite, a config file and NUnit-project file. It also reconfigure the project to start NUnit GUI and the test-suite when pressing F5 (debug).</description>
+    <summary>Testing framework (add-on to NUnit) for Business Intelligence. It supports the Microsoft Data platform (SQL Server Database engine, SSIS, SSAS, SSRS) but also MySQL, PostgreSQL and other solutions.</summary>
+    <releaseNotes>First version of this basic integration between NBi and Visual Studio</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>NBi Test BI SQL SSAS SSIS SSRS</tags>
+    <dependencies>
+      <dependency id="NUnit.Runners.Net4" version="2.6.4" />
+      <dependency id="NBi.Framework"/>
+    </dependencies>
+  </metadata>
+  
+</package>

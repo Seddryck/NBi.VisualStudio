@@ -1,0 +1,6 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Default" processModel="Default" domainUsage="Default" />
+  <Config name="Default" binpathtype="Auto" appbase="." configfile="TestSuite.config">
+    <assembly path="NBi.NUnit.Runtime.dll" />
+  </Config>
+</NUnitProject>
