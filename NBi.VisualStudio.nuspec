@@ -2,10 +2,10 @@
 <package >
   <metadata>
     <id>NBi.VisualStudio</id>
-    <version>0.1.0</version>
+    <version>0.8.0</version>
     <authors>Cédric L. Charlier</authors>
     <owners>Cédric L. Charlier</owners>
-    <licenseUrl>https://github.com/Seddryck/NBi/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/Seddryck/NBi.VisualStudio/blob/master/LICENSE</licenseUrl>
     <projectUrl>http://www.nbi.io</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/Seddryck/nbi/gh-pages/img/logo-2x.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
