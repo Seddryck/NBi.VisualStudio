@@ -2,9 +2,7 @@
 This project is facilitating the usage of NBi within Visual Studio.
 
 ![Still maintained](https://img.shields.io/maintenance/yes/2017.svg)
-6
 ![nuget](https://img.shields.io/nuget/v/NBi.VisualStudio.svg) 
-7
 ![nuget pre](https://img.shields.io/nuget/vpre/NBi.VisualStudio.svg)
 
 Usage
