@@ -7,8 +7,12 @@ foreach ($item in $items)
 	$item.Properties.Item("CopyToOutputDirectory").Value = 2
 }
 
-#Remove the file class1.cs (pointless)
-$project.ProjectItems("Class1.cs").Delete()
+#Cleanup the project files
+$project.ProjectItems | ForEach-Object {
+    if($_.Name -eq "Class1.cs" -or $_.Name -eq "app.config") {
+        $_.Delete()
+    }
+}
 
 #Change the StartAction and Program
 $projectName = $project.Name
