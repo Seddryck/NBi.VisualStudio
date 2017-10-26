@@ -20,4 +20,4 @@ $config = $project.ConfigurationManager.ActiveConfiguration
 $config.Properties.Item("StartAction").Value = 1
 $config.Properties.Item("StartProgram").Value = "$toolsPath\..\..\NUnit.Runners.Net4.2.6.4\tools\NUnit.exe"
 $config.Properties.Item("StartArguments").Value = "TestSuite.nunit /runselected"
-$config.Properties.Item("StartWorkingDirectory").Value = "$installPath\..\..\$projectName\bin\debug\"
+$config.Properties.Item("StartWorkingDirectory").Value = "$installPath\..\..\..\$projectName\bin\debug\"
