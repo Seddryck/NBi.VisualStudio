@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>NBi.VisualStudio</id>
+    <version>1.21</version>
+    <authors>Seddryck</authors>
+    <owners>Seddryck</owners>
+    <license type="expression">Apache-2.0</license>
+    <projectUrl>https://github.com/Seddryck/NBi.VisualStudio</projectUrl>
+    <icon>images\logo-2x.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package retrieves NUnit runners and NBi framework from Nuget before creating an empty test-suite, a config file and NUnit-project file. It also reconfigure the project to start NUnit GUI and the test-suite when pressing F5 (debug).</description>
+    <summary>Testing framework (add-on to NUnit) for Business Intelligence and Data Quality. It supports the Microsoft Data platform (SQL Server Database engine, SSIS, SSAS, SSRS) but also MySQL, PostgreSQL and some NoSQL databases with the help of extensions.</summary>
+    <releaseNotes>Updated to get the version 1.21 of NBi by default</releaseNotes>
+    <copyright>Copyright 2017-2019</copyright>
+    <tags>NBi Test BI SQL SSAS SSIS SSRS</tags>
+    <repository type="git" url="https://github.com/Seddryck/NBi.VisualStudio.git" branch="master" />
+    <dependencies>
+      <dependency id="NUnit.Runners.Net4" version="2.6.4" />
+      <dependency id="NBi.Framework" version="1.21"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="content\TestSuite.config" target="content\TestSuite.config" />
+    <file src="content\TestSuite.nbits" target="content\TestSuite.nbits" />
+    <file src="content\TestSuite.nunit" target="content\TestSuite.nunit" />
+    <file src="tools\Install.ps1" target="tools\Install.ps1" />
+    <file src="README.md" target="README.md" />
+	<file src="images\logo-2x.png" target="images\" />
+  </files>
+</package>
