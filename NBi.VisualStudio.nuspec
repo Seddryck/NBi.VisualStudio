@@ -12,13 +12,13 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This package retrieves NUnit runners and NBi framework from Nuget before creating an empty test-suite, a config file and NUnit-project file. It also reconfigure the project to start NUnit GUI and the test-suite when pressing F5 (debug).</description>
     <summary>Testing framework (add-on to NUnit) for Business Intelligence and Data Quality. It supports the Microsoft Data platform (SQL Server Database engine, SSIS, SSAS, SSRS) but also MySQL, PostgreSQL and some NoSQL databases with the help of extensions.</summary>
-    <releaseNotes>Updated to get the version $version$ of NBi by default</releaseNotes>
+    <releaseNotes>Updated to download the latest version of NBi $floatingVersion$ by default</releaseNotes>
     <copyright>Copyright 2017-$thisYear$</copyright>
     <tags>NBi Test BI SQL SSAS SSIS SSRS</tags>
     <repository type="git" url="https://github.com/Seddryck/NBi.VisualStudio.git" branch="master" />
     <dependencies>
       <dependency id="NUnit.Runners.Net4" version="2.6.4" />
-      <dependency id="NBi.Framework" version="$version$"/>
+      <dependency id="NBi.Framework" version="$floatingVersion$"/>
     </dependencies>
   </metadata>
   <files>

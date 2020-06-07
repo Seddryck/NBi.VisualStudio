@@ -13,6 +13,7 @@ new-item -Path $buildPath -ItemType directory
 new-item -Path "$buildPath\tmp" -ItemType directory
 
 $thisYear = get-date -Format yyyy
+$floatingVersion = "$($version.Split(".")[0]).$($version.Split(".")[1]).*"
 
 $nugetVersion = (((nuget help | select -First 1).Split(':')) | select -Last 1).Trim()
 Write-Host "Nuget's version: $nugetVersion"
@@ -24,9 +25,10 @@ else
 #For NBi.VisualStudio (dll)
 Write-Host "Packaging NBi.VisualStudio"
 
-Write-Host "Setting .nuspec version tag to $version and copyright until $thisYear"
+Write-Host "Setting .nuspec version tag to $version, NBi.Framework dependency version to $floatingVersion and copyright until $thisYear"
 $content = (Get-Content $root\NBi.VisualStudio.nuspec -Encoding UTF8) 
 $content = $content -replace '\$version\$',$version
+$content = $content -replace '\$floatingVersion\$',$floatingVersion
 $content = $content -replace '\$thisYear\$',$thisYear
 
 Write-Host "Managing metadata/icon vs metadata/iconUrl"
